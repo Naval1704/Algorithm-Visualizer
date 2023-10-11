@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(8, 0, 53);
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    padding: 0;
+    margin: 0;
+}
+nav h2{
+    color: rgb(0, 234, 255);    
+    padding: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
