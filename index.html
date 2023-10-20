@@ -14,7 +14,54 @@
     <div id="sortingVisualizer">
         <h3>Sorting Algorithms Visualizer</h3>
         <div id="sortingBox">
-            
+            <div id="generateNewArray">
+                <button>
+                    Generate New Array
+                </button>
+            </div>
+
+            <div id="control">
+                <span id="size">
+                    Size of Array
+                    <input
+                        id="arr_sz"
+                        type="range"
+                        min="10"
+                        max="130"
+                        step="1"
+                    />
+                    <!-- here the id is arr_sz which is used in sorting.js function to enable and disable the button -->
+                </span>
+                <span id="speed">
+                    Speed of Algorithm
+                    <input
+                        id="speed_input"
+                        type="range"
+                        min="20"
+                        max="300"
+                        stepDown="10"
+                    />
+                    <!-- here the id is speed_input which is used in sorting.js function to enable and disable the button -->
+                </span>
+			</div>
+
+            <div id="AlgoButtons">
+                <button id="selectionSort">
+                    Selection Sort
+                </button>
+                <button id="bubbleSort">
+                    Bubble Sort
+                </button>
+                <button id="insertionSort">
+                    Insertion Sort
+                </button>
+                <button id="quickSort">
+                    Quick Sort
+                </button>
+                <button id="mergeSort">
+                    Merge Sort
+                </button>
+            </div>
         </div>
     </div>
 </body>

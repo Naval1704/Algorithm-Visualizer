@@ -52,3 +52,48 @@ nav h2{
     font-weight: bold;
     font-size: 20px;
 }
+
+#sortingBox {
+    display: flex;
+}
+
+#sortingBox #generateNewArray {
+    padding: 25px;
+}
+#sortingBox #generateNewArray button{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#sortingBox #generateNewArray button:hover{
+    background-color: #73ff00c5;
+    color: black;
+}
+#sortingBox #AlgoButtons {
+    padding: 25px;
+}
+#sortingBox #AlgoButtons button{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#sortingBox #AlgoButtons button:hover{
+    background-color: #00fbff;
+    color: black;
+}
+
+#control span{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    display: flex;
+    padding: 10px;
+}
