@@ -1,6 +1,27 @@
+@font-face {
+    font-family: 'Gill Sans';
+    src: url(GILLUBCD.TTF) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Gill Sans MT';
+    src: url(GILBI___.TTF) format('truetype');
+  }
+  
+  @font-face {
+    font-family: Calibri;
+    src: url(calibrili.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Trebuchet MS';
+    src: url(trebucbi.ttf) format('truetype');
+  }
+
 body{
     margin: 0;
     padding: 0;
+    z-index: 1;
     background-color: rgb(8, 0, 53);
 }
 
@@ -16,6 +37,18 @@ h2{
 nav h2{
     color: rgb(0, 234, 255);    
     padding: 20px;
-    font-family: sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
+    font-size: 30px;
+}
+
+#sortingVisualizer {
+    padding: 20px;
+}
+
+#sortingVisualizer h3{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
 }
