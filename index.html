@@ -2,67 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Uniform Transformation Format -->
+    <!-- telling your browser to use the UTF-8character encoding which is a method of converting your typed code into a machine redable code -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this gives the browser instructions on how to control page's dimensions and scaling -->
+
     <link rel="stylesheet" href="AlgoVisionHub.css">
-    <title>AlgoVisionHub</title>
+    <!-- href is used to specify the location of a document -->
+    <!-- rel is the relation between the current document and the linked document -->
+
+    <title>Visualizer</title>
 </head>
-<body>
+<header>
     <nav>
-        <h2>AlgoVisionHub</h2>
+        <h2>Algorithm Visualizer</h2>
     </nav>
 
-    <div id="sortingVisualizer">
-        <h3>Sorting Algorithms Visualizer</h3>
-        <div id="sortingBox">
+    <div id="visualizer">
+        
+        <div id="row">
+            <!-- class row will hold each of its element in a row  -->
+
+            <h3>Sorting Algorithms Visualizer</h3>
             <div id="generateNewArray">
-                <button>
+                <button type="button" class="newarray">
+                    <!-- this new array class is defined so that we can enable and disable this button, by addressing this button in sorting.js -->
+
                     Generate New Array
                 </button>
             </div>
 
             <div id="control">
                 <span id="size">
+                    <!-- here the id 'size' is used in sorting.js function to enable and disable it -->
                     Size of Array
                     <input
                         id="arr_sz"
                         type="range"
                         min="10"
-                        max="130"
+                        max="150"
                         step="1"
                     />
-                    <!-- here the id is arr_sz which is used in sorting.js function to enable and disable the button -->
                 </span>
                 <span id="speed">
+                    <!-- here the id 'speed' is used in sorting.js function to enable and disable it -->
                     Speed of Algorithm
                     <input
                         id="speed_input"
                         type="range"
-                        min="20"
+                        min="10"
                         max="300"
                         stepDown="10"
                     />
-                    <!-- here the id is speed_input which is used in sorting.js function to enable and disable the button -->
                 </span>
 			</div>
 
             <div id="AlgoButtons">
-                <button id="selectionSort">
+                <button class="selectionSort">
                     Selection Sort
                 </button>
-                <button id="bubbleSort">
+                <button class="bubbleSort">
                     Bubble Sort
                 </button>
-                <button id="insertionSort">
+                <button class="insertionSort">
                     Insertion Sort
                 </button>
-                <button id="quickSort">
+                <button class="quickSort">
                     Quick Sort
                 </button>
-                <button id="mergeSort">
+                <button class="mergeSort">
                     Merge Sort
                 </button>
             </div>
         </div>
     </div>
+</header>
+<body>
+    <div id="bars" class="flex containers"> </div>
+    <script src="Sorting Algo/BubbleSort.js"></script>
+    <script src="Sorting Algo/InsertionSort.js"></script>
+    <script src="Sorting Algo/mergeSort.js"></script>
+    <script src="Sorting Algo/QuickSort.js"></script>
+    <script src="Sorting Algo/SelectionSort.js"></script>
+    <script src="Sorting Algo/sorting.js"></script>
 </body>
 </html>

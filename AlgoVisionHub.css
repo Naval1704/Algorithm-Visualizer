@@ -36,56 +36,58 @@ h2{
 }
 nav h2{
     color: rgb(0, 234, 255);    
-    padding: 20px;
+    padding: 10px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     font-size: 30px;
 }
 
-#sortingVisualizer {
-    padding: 20px;
+#visualizer {
+    padding: 0 20px;
 }
 
-#sortingVisualizer h3{
+#row h3{
     color: white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
 
-#sortingBox {
+#row {
     display: flex;
 }
 
-#sortingBox #generateNewArray {
+#row #generateNewArray {
     padding: 25px;
 }
-#sortingBox #generateNewArray button{
+#row #generateNewArray button{
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 20px;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
+    border-radius: 10px;
 }
 
-#sortingBox #generateNewArray button:hover{
+#row #generateNewArray button:hover{
     background-color: #73ff00c5;
     color: black;
 }
-#sortingBox #AlgoButtons {
+#row #AlgoButtons {
     padding: 25px;
 }
-#sortingBox #AlgoButtons button{
+#row #AlgoButtons button{
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 20px;
+    border-radius: 10px;
     font-weight: bold;
     transition: background-color 0.5s, color 0.5s;
 }
 
-#sortingBox #AlgoButtons button:hover{
+#row #AlgoButtons button:hover{
     background-color: #00fbff;
     color: black;
 }
